@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Thu, 24 Dec 2015 21:18:18 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+	<style rel="stylesheet" type="text/css" media="Screen">
+	
+	body {
+	margin:0;
+	padding:0; 
+	}
+	
+	fieldset {
+	background-color: #ffffb3;
+	border: 10px solid #ffff00;
+	width: 720px;
+    margin-bottom: 10px;
+	}
+	
+	form label{
+	 margin: auto;
+	 width: 180px;
+	 display: inline-block;
+	 float:left;
+	 vertical-align: text-top;
+	 text-align: right;
+	 }
+	 
+	  
+	 label, checkbox, radio{	
+	 width: auto; 
+	 }
+	 
+	 range{
+	 text-align:center;
+	  }
+	 
+	 textarea{
+	 width: 360px;
+	 height: 50px;
+	  }
+	  
+	  .two{
+	  background-color:Red }
+	  
+	  .one{
+	   background-color:purple }
+	   
+	
+	</style>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+
+	
+  </head>
+  
+  
+<body>
+  
+  <h1>Please Enter Your Details for Our Dating Site </h1>
+  
+   <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+   
+  <fieldset>
+    <legend>Your Face</legend> 
+	
+    <label for="face"> Your Image: </label>
+    <input type="file" name="face" value="face" required="flag"> <br>
+    <label for="preview"> Image Preview: </label>
+	<img id="preview" src="#" alt="your image"/>  <br>
+	
+  </fieldset>
+  
+  
+  <fieldset>
+  <legend>Your General Details</legend> <br/>
+  
+  <label for="name"> Name: </label>
+  
+        <input type ="text" id="name" name="name" placeholder="Your full name" autofocus required="flag" > </br>
+ 
+  <label for="gender"> Gender: </label>
+  
+         <input type="radio" id="gender" name="gender" value="male" required="flag"> Male  
+         <input type="radio" id="gender" name="gender" value="female" required="flag"> Female  <br/>
+		 
+  <label for="age">Age: </label> 
+  
+  <input type="number" min="0" max="99" step="1"  value="18" id="age" name="age" required="flag"> <br/>
+  
+  <label for="birthday"> Date of Birth: </label> 
+  <input type="date" id="birthday" name="birthday">  <br/>
+  
+  <label for="color"> Favorite Color: </label> 
+  <input type="color" id="color" name="color"> <br/>
+  
+  <label for="country"> Which Country: </label>
+  
+  <select name="countries">
+  <option value ="n/a">Select a Country</option>
+  <option value ="US" >United States</option> 
+  <option value ="HK" >Hong Kong</option>
+  <option value ="UK" >United Kingdom</option> 
+  <option value ="FR" >France</option>
+  <option value ="KY" >Kenya</option>
+  </select>
+
+  </fieldset>
+  
+
+  
+  <fieldset>
+  <legend> Your Indicators </legend> <br/>
+  
+  <label for="height"> Height: </label>
+  <span class="two"> Short </span> <input type="range" min="0" max="100" step="5" value="50"> <span class="one"> Tall </span>  <br/>
+  
+  <label for="salary"> Salary: </label>
+  <span class="two"> Poor&nbsp </span> <input type="range" min="0" max="100" step="5" value="50"> <span class="one"> Rich </span>  <br/>
+
+  </fieldset>
+
+  
+ 
+  
+  <fieldset>
+  <legend> Your Contact Informaton </legend> <br/>
+  
+  <label for="email"> Email: </label> 
+  <input type="email" id="email" name="email" required="flag">  <br/>
+  
+  <label for="tel"> Mobile: </label> 
+  <input type="tel" id="tel" name="tel" > <br/>
+  
+  
+  <label for="address"> Address: </label> 
+  <textarea rows="5" cols="20" name="address"> </textarea> <br/>
+  
+  <label for="contact"> Method to contact you: </label>
+  <input type="checkbox" name="contact" value="email"> Email 
+  <input type="checkbox" name="contact" value="Whatsapp"> Whatsapp 
+  <input type="checkbox" name="contact" value="In-appChat"> In-appChat 
+  
+  
+  </fieldset>
+
+  
+  <input type="submit" name="Submit">
+ 
+ </form>
+  
+ <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+  
+  
+  </body>
+
+</html>
